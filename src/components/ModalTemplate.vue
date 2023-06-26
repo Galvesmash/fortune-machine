@@ -20,18 +20,17 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+  import { defineComponent } from 'vue';
 
-export default defineComponent({
-  name: 'ModalTemplate',
+  export default defineComponent({
+    name: 'ModalTemplate',
 
-  props: {
-    handleClose: Function,
-  },
-});
+    props: {
+      handleClose: Function,
+    },
+  });
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
   .modal-mask {
     position: fixed;
