@@ -3,10 +3,10 @@
     class="fortune-card"
   >
     <p
-      v-if="!fortuneError && fortune && fortuneTranslated"
+      v-if="!fortuneError && (fortuneTranslated || fortune)"
       class="fortune"
     >
-      {{ fortuneTranslated }}
+      {{ fortuneTranslated || fortune }}
     </p>
 
     <p
