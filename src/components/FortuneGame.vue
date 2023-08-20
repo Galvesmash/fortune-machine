@@ -24,7 +24,7 @@
         class="option"
       >
         {{ option.translate }}
-      </a> 
+      </a>
     </div>
       
     <LoadingFortuneCard
@@ -60,21 +60,24 @@
       return {
         loadingFortune: false,
         showFortuneAnswerModal: false,
-        fortuneOptions: [
-          {
-            translate: 'Amor',
-            value: 'love',
-          },
-          {
-            translate: 'Amigos',
-            value: 'friends',
-          },
-          {
-            translate: 'Dinheiro',
-            value: 'money',
-          },
-        ]
       }
+    },
+
+    created() {
+      this.setFortuneOptions([
+        {
+          translate: 'Amor',
+          value: 'love',
+        },
+        {
+          translate: 'Amigos',
+          value: 'friends',
+        },
+        {
+          translate: 'Dinheiro',
+          value: 'money',
+        },
+      ]);
     },
 
     methods: {
@@ -88,11 +91,12 @@
 
       ...mapMutations('fortune_teller/fortune', [
         'setFortuneError',
+        'setFortuneOptions',
         'setFortuneTranslated',
       ]),
 
       handleFortune(theme = null) {
-        if (this.loadingFortune) return;
+        if (!theme || this.loadingFortune) return;
 
         this.loadingFortune = true;
 
@@ -116,7 +120,6 @@
           this.setFortuneTranslated(response);
         }).catch((error) => {
           console.error(error);
-          // this.setFortuneError();
           this.setFortuneTranslated('');
         }).finally(() => {
           this.showFortuneAnswerModal = true;
@@ -132,6 +135,7 @@
     computed: {
       ...mapGetters('fortune_teller/fortune', {
         fortune: 'getFortune',
+        fortuneOptions: 'getFortuneOptions',
       }),
     },
   });
@@ -153,14 +157,17 @@
       }
 
       .option {
+        cursor: pointer;
         display: flex;
 
-        &:hover::before {
-          content: "> ";
-          // }
+        &:hover {
+          font-weight: bold;
+
+          &::before {
+            content: "> ";
+          }
         }
       }
-
     }
   }
 </style>

@@ -5,6 +5,7 @@ import mutations from './mutations';
 const state = () => ({
   fortune: '',
   fortune_error: false,
+  fortune_options: [],
   fortune_translated: '',
 });
 

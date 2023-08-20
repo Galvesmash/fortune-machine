@@ -7,6 +7,10 @@ export default {
     return state.fortune_error;
   },
 
+  getFortuneOptions: (state: any) => {
+    return state.fortune_options;
+  },
+
   getFortuneTranslated: (state: any) => {
     return state.fortune_translated;
   },

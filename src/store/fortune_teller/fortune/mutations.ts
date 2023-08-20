@@ -1,7 +1,17 @@
 export default {
+  reset(state: any, payload: any) {
+    state.fortune = '';
+    state.fortune_error = false;
+    state.fortune_translated = '';
+  },
+
   setFortune(state: any, payload: any) {
     state.fortune = payload;
     state.fortune_error = false;
+  },
+
+  setFortuneOptions(state: any, payload: any) {
+    state.fortune_options = payload || [];
   },
 
   setFortuneError(state: any) {
