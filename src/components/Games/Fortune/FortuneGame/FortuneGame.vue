@@ -43,9 +43,9 @@
 <script lang="ts">
   import { defineComponent } from 'vue';
   import { mapActions, mapGetters, mapMutations } from 'vuex';
-  import LoadingFortuneCard from '@/components/LoadingFortuneCard.vue';
-  import FortuneCard from '@/components/FortuneCard.vue';
-  import ModalTemplate from '@/components/ModalTemplate.vue';
+  import LoadingFortuneCard from './LoadingFortuneCard.vue';
+  import FortuneCard from './FortuneCard.vue';
+  import ModalTemplate from '@/components/General/ModalTemplate.vue';
 
   export default defineComponent({
     name: 'FortuneGame',
@@ -142,10 +142,17 @@
 </script>
 
 <style scoped lang="scss">
+  $text-color-light: #140C1C;
+  $text-color-dark: #DEEED6;
+
   .fortune-game {
-    padding: 50px 100px;
+    max-height: calc(100% - 8em);
+    max-width: calc(100% - 16em);
+    padding: 4em 8em;
 
     .menu {
+      // color: $text-color-light;
+      color: $text-color-dark;
       font-family: vcrosdmono;
       text-align: initial;
       text-transform: uppercase;

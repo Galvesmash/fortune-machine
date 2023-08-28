@@ -49,13 +49,17 @@
 </script>
 
 <style scoped lang="scss">
+  $background-light: #F7F7F7;
+  $background-dark: #140C1C;
+
   .loading-fortune-card {
     -moz-animation: fadeIn 1s;
     -webkit-animation: fadeIn 1s;
     -o-animation: fadeIn 1s;
     align-items: center;
     animation: fadeIn 1s;
-    background-color: white;
+    // background-color: $background-light;
+    background-color: $background-dark;
     display: flex;
     height: 100vh;
     justify-content: center;

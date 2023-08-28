@@ -1,6 +1,6 @@
 <template>
   <div
-    class="tarot-three-cards-game"
+    class="tarot-yes-no-game"
   >
     <div
       class="menu"
@@ -8,7 +8,7 @@
       <h1
         class="title"
       >
-        Tarot 3 cartas: Situação, Orientação e Resultado
+        Tarot Sim ou Não
       </h1>
     </div>
   </div>
@@ -18,7 +18,7 @@
   import { defineComponent } from 'vue';
 
   export default defineComponent({
-    name: 'TarotThreeCardsGame',
+    name: 'TarotYesNoGame',
 
     data() {
       return {
@@ -29,7 +29,9 @@
 </script>
 
 <style scoped lang="scss">
-  .tarot-three-cards-game {
-    padding: 50px 100px;
+  .tarot-yes-no-game {
+    max-height: calc(100% - 8em);
+    max-width: calc(100% - 16em);
+    padding: 4em 8em;
   }
 </style>

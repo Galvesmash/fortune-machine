@@ -1,6 +1,6 @@
 <template>
   <div
-    class="tarot-yes-no-game"
+    class="tarot-daily-game"
   >
     <div
       class="menu"
@@ -8,7 +8,7 @@
       <h1
         class="title"
       >
-        Tarot Sim ou Não
+        Tarot Diário
       </h1>
     </div>
   </div>
@@ -18,7 +18,7 @@
   import { defineComponent } from 'vue';
 
   export default defineComponent({
-    name: 'TarotYesNoGame',
+    name: 'TarotDailyGame',
 
     data() {
       return {
@@ -29,7 +29,9 @@
 </script>
 
 <style scoped lang="scss">
-  .tarot-yes-no-game {
-    padding: 50px 100px;
+  .tarot-daily-game {
+    max-height: calc(100% - 8em);
+    max-width: calc(100% - 16em);
+    padding: 4em 8em;
   }
 </style>

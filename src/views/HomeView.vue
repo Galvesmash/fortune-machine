@@ -13,12 +13,12 @@
 <script lang="ts">
   import { defineComponent } from 'vue';
   import { mapGetters, mapMutations } from 'vuex';
-  import FortuneGame from '@/components/FortuneGame.vue';
-  import FortuneMachine from '@/components/FortuneMachine.vue';
-  import GameSelection from '@/components/GameSelection.vue';
-  import TarotDailyGame from '@/components/TarotDailyGame.vue';
-  import TarotThreeCardsGame from '@/components/TarotThreeCardsGame.vue';
-  import TarotYesNoGame from '@/components/TarotYesNoGame.vue';
+  import FortuneGame from '@/components/Games/Fortune/FortuneGame/FortuneGame.vue';
+  import FortuneMachine from '@/components/General/FortuneMachine.vue';
+  import GameSelection from '@/components/Games/GameSelection.vue';
+  import TarotDailyGame from '@/components/Games/Tarot/TarotDailyGame/TarotDailyGame.vue';
+  import TarotThreeCardsGame from '@/components/Games/Tarot/TarotThreeCardsGame/TarotThreeCardsGame.vue';
+  import TarotYesNoGame from '@/components/Games/Tarot/TarotYesNoGame/TarotYesNoGame.vue';
 
   export default defineComponent({
     name: 'HomeView',
@@ -35,22 +35,22 @@
     created() {
       this.setGameOptions([
         {
-          image: 'crystal_ball_pixel.png',
+          cover_compont: 'FortuneGameCover',
           translate: 'Jogo da Fortuna',
           value: 'FortuneGame',
         },
         {
-          image: 'tarot_pixel.png',
+          cover_compont: 'TarotDailyGameCover',
           translate: 'Jogo de Tarot Diário',
           value: 'TarotDailyGame',
         },
         {
-          image: 'tarot_pixel.png',
+          cover_compont: 'TarotYesNoGameCover',
           translate: 'Jogo de Tarot Sim ou Não',
           value: 'TarotYesNoGame',
         },
         {
-          image: 'tarot_pixel.png',
+          cover_compont: 'TarotThreeCardsGameCover',
           translate: 'Jogo de Tarot 3 cartas: Situação, Orientação e Resultado',
           value: 'TarotThreeCardsGame',
         },

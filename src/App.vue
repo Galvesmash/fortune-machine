@@ -3,7 +3,9 @@
     <router-link to="/">Fortune Machine</router-link> |
     <router-link to="/about">About</router-link>
   </nav> -->
-  <router-view/>
+  <router-view
+    class="prevent-select"
+  />
 </template>
 
 <style lang="scss">
@@ -42,5 +44,11 @@
         color: #42b983;
       }
     }
+  }
+
+  .prevent-select {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
   }
 </style>

@@ -78,7 +78,8 @@
 
 <style scoped lang="scss">
   $monitor-off-color: #272727;
-  $monitor-on-color: #F7F7F7;
+  $monitor-on-color-light: #F7F7F7;
+  $monitor-on-color-dark: #140C1C;
 
   .fortune-machine {
     display: flex;
@@ -135,7 +136,8 @@
               animation-duration: 1s;
               animation-name: monitor-turn-on;
               animation-timing-function: ease-in-out;
-              background-color: $monitor-on-color;
+              // background-color: $monitor-on-color-light;
+              background-color: $monitor-on-color-dark;
               opacity: 1;
             }
           }
