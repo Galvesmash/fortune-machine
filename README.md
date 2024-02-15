@@ -1,5 +1,14 @@
 # fortune-teller
 
+## About
+Fortune telles project, made with Vue 3 and magic.
+Created bt Gabriel Galves Taliatti and Camila de Oliveira Mônaco.
+
+### APIs:
+- Fortunecookie by wh-iterabb-it.
+- Meowfacts by wh-iterabb-it.
+
+
 ## Project setup
 ```
 npm install
