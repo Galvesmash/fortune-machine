@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunkfortune_teller"]=self["webpackChunkfortune_teller"]||[]).push([[443],{364:function(e,n,t){t.r(n),t.d(n,{default:function(){return i}});var r=t(252);const u={class:"about"},a=(0,r._)("h1",null,"This is an about page",-1),s=[a];function l(e,n){return(0,r.wg)(),(0,r.iD)("div",u,s)}var c=t(744);const o={},f=(0,c.Z)(o,[["render",l]]);var i=f}}]);
-//# sourceMappingURL=about.4da63e2d.js.map

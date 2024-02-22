@@ -3,6 +3,7 @@
     name="modal"
   >
     <div
+      v-if="show"
       class="modal-mask"
       @click="$emit('handleClose')"
     >
@@ -27,6 +28,12 @@
 
     props: {
       handleClose: Function,
+    },
+
+    data() {
+      return {
+        show: true,
+      }
     },
   });
 </script>
@@ -65,15 +72,6 @@
   .modal-default-button {
     float: right;
   }
-
-  /*
-   * The following styles are auto-applied to elements with
-   * transition="modal" when their visibility is toggled
-   * by Vue.js.
-   *
-   * You can easily play with the modal transition by editing
-   * these styles.
-   */
 
   .modal-enter {
     opacity: 0;
