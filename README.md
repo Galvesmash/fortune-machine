@@ -4,6 +4,9 @@
 Fortune telles project, made with Vue 3 and magic.
 Created bt Gabriel Galves Taliatti and Camila de Oliveira Mônaco.
 
+## Project Page
+https://galvesmash.github.io/Fortune-Machine/
+
 ### APIs:
 - Fortunecookie by wh-iterabb-it.
 - Meowfacts by wh-iterabb-it.
