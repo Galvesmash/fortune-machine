@@ -111,7 +111,7 @@
       },
 
       translateText() {
-        let payload = {
+        const payload = {
           text: this.fortune,
           target: 'pt-br'
         };

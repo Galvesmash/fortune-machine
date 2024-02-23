@@ -1,5 +1,5 @@
 export default {
-  reset(state: any, payload: any) {
+  reset(state: any) {
     state.game_options = [];
     state.game_selection = null;
   },

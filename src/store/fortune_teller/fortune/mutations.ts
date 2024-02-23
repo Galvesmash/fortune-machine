@@ -1,5 +1,5 @@
 export default {
-  reset(state: any, payload: any) {
+  reset(state: any) {
     state.fortune = '';
     state.fortune_error = false;
     state.fortune_translated = '';
