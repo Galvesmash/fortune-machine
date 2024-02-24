@@ -13,7 +13,6 @@
 <script lang="ts">
   import { defineComponent } from 'vue';
   import { mapGetters, mapMutations } from 'vuex';
-  import FortuneGame from '@/components/Games/Fortune/FortuneGame/FortuneGame.vue';
   import FortuneMachine from '@/components/General/FortuneMachine.vue';
   import GameSelection from '@/components/Games/GameSelection.vue';
   import TarotDailyGame from '@/components/Games/Tarot/TarotDailyGame/TarotDailyGame.vue';
@@ -24,7 +23,6 @@
     name: 'HomeView',
 
     components: {
-      FortuneGame,
       FortuneMachine,
       GameSelection,
       TarotDailyGame,
@@ -37,7 +35,8 @@
         {
           cover_compont: 'FortuneGameCover',
           translate: 'Jogo da Fortuna',
-          value: 'FortuneGame',
+          // value: 'FortuneTellerGame',
+          value: 'fortune-teller-game',
         },
         {
           cover_compont: 'TarotDailyGameCover',

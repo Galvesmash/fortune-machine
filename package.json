@@ -2,6 +2,9 @@
   "name": "fortune-machine",
   "version": "0.1.0",
   "private": true,
+  "description": "Fortune Machine project",
+  "author": "Galvesmash",
+  "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
