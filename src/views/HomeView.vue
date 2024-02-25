@@ -15,6 +15,7 @@
   import { mapGetters, mapMutations } from 'vuex';
   import FortuneMachine from '@/components/General/FortuneMachine.vue';
   import GameSelection from '@/components/Games/GameSelection.vue';
+  import FortuneTellerGame from 'fortune-teller-game';
   import TarotDailyGame from '@/components/Games/Tarot/TarotDailyGame/TarotDailyGame.vue';
   import TarotThreeCardsGame from '@/components/Games/Tarot/TarotThreeCardsGame/TarotThreeCardsGame.vue';
   import TarotYesNoGame from '@/components/Games/Tarot/TarotYesNoGame/TarotYesNoGame.vue';
@@ -25,6 +26,7 @@
     components: {
       FortuneMachine,
       GameSelection,
+      FortuneTellerGame,
       TarotDailyGame,
       TarotThreeCardsGame,
       TarotYesNoGame,
@@ -35,8 +37,8 @@
         {
           cover_compont: 'FortuneGameCover',
           translate: 'Jogo da Fortuna',
-          // value: 'FortuneTellerGame',
-          value: 'fortune-teller-game',
+          value: 'FortuneTellerGame',
+          // value: 'fortune-teller-game',
         },
         {
           cover_compont: 'TarotDailyGameCover',
