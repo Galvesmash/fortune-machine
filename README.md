@@ -8,9 +8,7 @@ Created bt Gabriel Galves Taliatti and Camila de Oliveira Mônaco.
 https://galvesmash.github.io/Fortune-Machine/
 
 ### APIs:
-- Fortunecookie by wh-iterabb-it.
-- Meowfacts by wh-iterabb-it.
-
+- OpenTranslator by falcondsp. (https://rapidapi.com/falcondsp/api/opentranslator)
 
 ## Project setup
 ```

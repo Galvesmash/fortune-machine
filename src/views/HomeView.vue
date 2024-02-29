@@ -38,7 +38,6 @@
           cover_compont: 'FortuneGameCover',
           translate: 'Jogo da Fortuna',
           value: 'FortuneTellerGame',
-          // value: 'fortune-teller-game',
         },
         {
           cover_compont: 'TarotDailyGameCover',
@@ -59,13 +58,13 @@
     },
 
     methods: {
-      ...mapMutations('fortune_teller/general', [
+      ...mapMutations('fortune_machine/general', [
         'setGameOptions',
       ]),
     },
 
     computed: {
-      ...mapGetters('fortune_teller/general', {
+      ...mapGetters('fortune_machine/general', {
         selectedGame: 'getGameSelection',
       }),
 

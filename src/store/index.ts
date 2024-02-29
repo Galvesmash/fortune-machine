@@ -1,4 +1,4 @@
-import fortune_teller from './fortune_teller';
+import fortune_machine from './fortune_machine';
 import { createStore } from 'vuex';
 
 export default createStore({
@@ -15,6 +15,6 @@ export default createStore({
     // 
   },
   modules: {
-    fortune_teller,
+    fortune_machine,
   }
 });

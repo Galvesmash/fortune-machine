@@ -45,7 +45,7 @@
 <script lang="ts">
   import { defineComponent } from 'vue';
   import { mapGetters, mapMutations } from 'vuex';
-  import FortuneGameCover from '@/components/Games/Fortune/FortuneGame/FortuneGameCover.vue';
+  import FortuneGameCover from '@/components/Games/Fortune/FortuneGameCover.vue';
   import TarotDailyGameCover from '@/components/Games/Tarot/TarotDailyGame/TarotDailyGameCover.vue';
   import TarotThreeCardsGameCover from '@/components/Games/Tarot/TarotThreeCardsGame/TarotThreeCardsGameCover.vue';
   import TarotYesNoGameCover from '@/components/Games/Tarot/TarotYesNoGame/TarotYesNoGameCover.vue';
@@ -70,7 +70,7 @@
     },
 
     methods: {
-      ...mapMutations('fortune_teller/general', [
+      ...mapMutations('fortune_machine/general', [
         'setGameSelection',
       ]),
 
@@ -103,7 +103,7 @@
     },
 
     computed: {
-      ...mapGetters('fortune_teller/general', {
+      ...mapGetters('fortune_machine/general', {
         gameOptions: 'getGameOptions',
       }),
     },

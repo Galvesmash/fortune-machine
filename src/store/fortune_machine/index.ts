@@ -1,4 +1,3 @@
-import fortune from './fortune';
 import general from './general';
 
 export default {
@@ -16,7 +15,6 @@ export default {
     // 
   },
   modules: {
-    fortune,
     general,
   }
 };
