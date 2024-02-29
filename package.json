@@ -14,7 +14,7 @@
     "@types/node": "^20.11.20",
     "axios": "^1.6.7",
     "core-js": "^3.8.3",
-    "fortune-teller-game": "^0.2.0",
+    "fortune-teller-game": "^0.3.0",
     "vue": "^3.2.13",
     "vue-axios": "^3.5.2",
     "vue-i18n": "^9.9.1",
