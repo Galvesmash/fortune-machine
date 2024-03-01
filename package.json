@@ -1,17 +1,23 @@
 {
   "name": "fortune-machine",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
+  "description": "Fortune Machine project",
+  "author": "Galvesmash",
+  "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@types/node": "^20.11.20",
     "axios": "^1.6.7",
     "core-js": "^3.8.3",
+    "fortune-teller-game": "^0.3.2",
     "vue": "^3.2.13",
     "vue-axios": "^3.5.2",
+    "vue-i18n": "^9.9.1",
     "vue-router": "^4.3.0",
     "vuex": "^4.1.0"
   },
@@ -29,7 +35,7 @@
     "eslint-plugin-vue": "^8.0.3",
     "sass": "^1.71.1",
     "sass-loader": "^14.1.1",
-    "typescript": "^5.3.3"
+    "typescript": "^5.2.0"
   },
   "eslintConfig": {
     "root": true,

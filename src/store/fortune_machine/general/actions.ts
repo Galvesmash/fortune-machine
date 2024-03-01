@@ -13,7 +13,7 @@ export default {
         headers: {
           'Content-Type': 'application/json',
           'X-RapidAPI-Host': process.env.VUE_APP_RAPID_API_OPENTRANSLATOR_HOST,
-          'X-RapidAPI-Key': process.env.VUE_APP_RAPID_API_KEY,
+          'X-RapidAPI-Key': process.env.VUE_APP_FORTUNE_TELLER_GAME_RAPID_API_KEY,
         }
       }).then((response) => {
         commit(resolve(response.data[0].result.text));
