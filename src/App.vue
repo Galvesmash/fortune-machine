@@ -6,6 +6,12 @@
   <router-view
     class="prevent-select"
   />
+
+  <p
+    class="version"
+  >
+    v{{ $store.getters.appVersion }}
+  </p>
 </template>
 
 <style lang="scss">
@@ -50,5 +56,13 @@
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
+  }
+
+  .version {
+    bottom: 10px;
+    left: 10px;
+    margin: 0;
+    position: fixed;
+    z-index: 9999;
   }
 </style>

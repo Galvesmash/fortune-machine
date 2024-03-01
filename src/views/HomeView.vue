@@ -3,11 +3,8 @@
     class="home"
   >
     <FortuneMachine>
-        <!-- :default-locale="defaultLocale"
-        :fallback-locale="fallbackLocale"
-        :rapid-api-key="rapidApiKey" -->
       <component
-        v-bind="loadedComponent.props"
+        v-bind="componentProps"
         :is="loadedComponent"
       />
     </FortuneMachine>
@@ -38,61 +35,49 @@
 
     data() {
       return {
-        defaultLocale: '',
-        fallbackLocale: '',
-        rapidApiKey: ''
+        defaultComponent: 'GameSelection',
       }
     },
 
     created() {
-      this.defaultLocale = process.env.VUE_APP_DEFAULT_LOCALE;
-      this.fallbackLocale = process.env.VUE_APP_FALLBACK_LOCALE;
-      this.rapidApiKey = process.env.VUE_APP_FORTUNE_TELLER_GAME_RAPID_API_KEY;
+      const defaultLocale = process.env.VUE_APP_DEFAULT_LOCALE;
+      const rapidApiKey = process.env.VUE_APP_FORTUNE_TELLER_GAME_RAPID_API_KEY;
 
       this.setGameOptions([
         {
           cover_compont: 'FortuneGameCover',
           translate: 'Jogo da Fortuna',
           value: 'FortuneTellerGame',
-          props: function() {
-            return {
-              'default-locale': this.defaultLocale,
-              'fallback-locale': this.fallbackLocale,
-              'rapid-api-key': this.rapidApiKey
-            }
+          props: {
+            locale: defaultLocale,
+            rapidApiKey: rapidApiKey
           }
         },
         {
           cover_compont: 'TarotDailyGameCover',
           translate: 'Jogo de Tarot Diário',
           value: 'TarotDailyGame',
-          props: function() {
-            return {
-              ':default-locale': this.defaultLocale,
-              ':fallback-locale': this.fallbackLocale
-            }
+          props: {
+            locale: defaultLocale,
+            rapidApiKey: rapidApiKey
           }
         },
         {
           cover_compont: 'TarotYesNoGameCover',
           translate: 'Jogo de Tarot Sim ou Não',
           value: 'TarotYesNoGame',
-          props: function() {
-            return {
-              ':default-locale': this.defaultLocale,
-              ':fallback-locale': this.fallbackLocale
-            }
+          props: {
+            locale: defaultLocale,
+            rapidApiKey: rapidApiKey
           }
         },
         {
           cover_compont: 'TarotThreeCardsGameCover',
           translate: 'Jogo de Tarot 3 cartas: Situação, Orientação e Resultado',
           value: 'TarotThreeCardsGame',
-          props: function() {
-            return {
-              ':default-locale': this.defaultLocale,
-              ':fallback-locale': this.fallbackLocale
-            }
+          props: {
+            locale: defaultLocale,
+            rapidApiKey: rapidApiKey
           }
         },
       ]);
@@ -106,12 +91,19 @@
 
     computed: {
       ...mapGetters('fortune_machine/general', {
+        gameOptions: 'getGameOptions',
         selectedGame: 'getGameSelection',
       }),
 
-      loadedComponent(): string {
-        return this.selectedGame || 'GameSelection';
+      loadedComponent(): String {
+        return this.selectedGame || this.defaultComponent;
       },
+
+      componentProps(): Object {
+        return this.selectedGame
+          ? this.gameOptions.find((o: any) => o.value == this.selectedGame).props
+          : null
+      }
     },
   });
 </script>
