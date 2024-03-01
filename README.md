@@ -1,11 +1,14 @@
-# fortune-teller
+# fortune-machine
+
+## This is a WIP project!
 
 ## About
-Fortune telles project, made with Vue 3 and magic.
+Fortune Machine project, made with Vue 3 and magic.
 Created bt Gabriel Galves Taliatti and Camila de Oliveira Mônaco.
 
-## Project Page
-https://galvesmash.github.io/Fortune-Machine/
+## GitHub Page
+- Repository: https://github.com/Galvesmash/fortune-machine
+- Web: https://galvesmash.github.io/fortune-machine/#/
 
 ### APIs:
 - OpenTranslator by falcondsp. (https://rapidapi.com/falcondsp/api/opentranslator)
@@ -29,6 +32,3 @@ npm run build
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

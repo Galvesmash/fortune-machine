@@ -96,6 +96,7 @@
         this.loadingGame = true;
 
         setTimeout(() => {
+          console.log(this);
           this.setGameSelection(this.gameOptions[this.gameIndex].value);
           this.loadingGame = false;
         }, 1000);

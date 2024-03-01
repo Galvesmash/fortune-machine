@@ -3,11 +3,12 @@
     class="home"
   >
     <FortuneMachine>
-      <component
-        :is="loadedComponent"
-        :default-locale="defaultLocale"
+        <!-- :default-locale="defaultLocale"
         :fallback-locale="fallbackLocale"
-        :rapid-api-key="rapidApiKey"
+        :rapid-api-key="rapidApiKey" -->
+      <component
+        v-bind="loadedComponent.props"
+        :is="loadedComponent"
       />
     </FortuneMachine>
   </div>
@@ -53,21 +54,46 @@
           cover_compont: 'FortuneGameCover',
           translate: 'Jogo da Fortuna',
           value: 'FortuneTellerGame',
+          props: function() {
+            return {
+              'default-locale': this.defaultLocale,
+              'fallback-locale': this.fallbackLocale,
+              'rapid-api-key': this.rapidApiKey
+            }
+          }
         },
         {
           cover_compont: 'TarotDailyGameCover',
           translate: 'Jogo de Tarot Diário',
           value: 'TarotDailyGame',
+          props: function() {
+            return {
+              ':default-locale': this.defaultLocale,
+              ':fallback-locale': this.fallbackLocale
+            }
+          }
         },
         {
           cover_compont: 'TarotYesNoGameCover',
           translate: 'Jogo de Tarot Sim ou Não',
           value: 'TarotYesNoGame',
+          props: function() {
+            return {
+              ':default-locale': this.defaultLocale,
+              ':fallback-locale': this.fallbackLocale
+            }
+          }
         },
         {
           cover_compont: 'TarotThreeCardsGameCover',
           translate: 'Jogo de Tarot 3 cartas: Situação, Orientação e Resultado',
           value: 'TarotThreeCardsGame',
+          props: function() {
+            return {
+              ':default-locale': this.defaultLocale,
+              ':fallback-locale': this.fallbackLocale
+            }
+          }
         },
       ]);
     },
