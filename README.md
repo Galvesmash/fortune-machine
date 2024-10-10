@@ -1,6 +1,6 @@
 # fortune-machine
 
-##[Click here to check Fortune Machine running!](https://galvesmash.github.io/fortune-machine/#/)
+## [Click here to check Fortune Machine running!](https://galvesmash.github.io/fortune-machine/#/)
 
 ## About
 Fortune Machine project is still a work in progress and it's being made with love and sorcery.
