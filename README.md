@@ -1,17 +1,21 @@
 # fortune-machine
 
-## This is a WIP project!
+##[Click here to check Fortune Machine running!](https://galvesmash.github.io/fortune-machine/#/)
 
 ## About
-Fortune Machine project, made with Vue 3 and magic.
+Fortune Machine project is still a work in progress and it's being made with love and sorcery.
+Fortune Machine is being developed with Microfrontend, JavaScript, TypeScript and Vue.js.
+Our other project [Fortune Teller Game](https://github.com/Galvesmash/fortune-teller-game?tab=readme-ov-file#fortune-teller-game) is imported inside as [NPM package](https://www.npmjs.com/package/fortune-teller-game).
+
 Created bt Gabriel Galves Taliatti and Camila de Oliveira Mônaco.
 
 ## GitHub Page
-- Repository: https://github.com/Galvesmash/fortune-machine
-- Web: https://galvesmash.github.io/fortune-machine/#/
+- [Repository](https://github.com/Galvesmash/fortune-machine)
+- [Web](https://galvesmash.github.io/fortune-machine/#/)
+- [NPM package](https://www.npmjs.com/package/fortune-teller-game)
 
 ### APIs:
-- OpenTranslator by falcondsp. (https://rapidapi.com/falcondsp/api/opentranslator)
+- [OpenTranslator by falcondsp](https://rapidapi.com/falcondsp/api/opentranslator)
 
 ## Project setup
 ```
