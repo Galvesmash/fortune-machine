@@ -7,7 +7,7 @@ Fortune Machine project is still a work in progress and it's being made with lov
 Fortune Machine is being developed with Microfrontend, JavaScript, TypeScript and Vue.js.
 Our other project [Fortune Teller Game](https://github.com/Galvesmash/fortune-teller-game?tab=readme-ov-file#fortune-teller-game) is imported inside as [NPM package](https://www.npmjs.com/package/fortune-teller-game).
 
-Created bt Gabriel Galves Taliatti and Camila de Oliveira Mônaco.
+Created by Gabriel Galves Taliatti and Camila de Oliveira Mônaco.
 
 ## GitHub Page
 - [Repository](https://github.com/Galvesmash/fortune-machine)
